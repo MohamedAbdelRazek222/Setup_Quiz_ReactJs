@@ -19,13 +19,8 @@ if(loading){
 }
 
 // questions-------------------------------------
-console.log(questions[0])
-// {category: 'Sports', type: 'multiple', difficulty: 'easy', question: 'Which of the following sports is not part of the triathlon?', correct_answer: 'Horse-Riding', …}
 const {question,incorrect_answers,correct_answer} =questions[index] 
-// const answers=[...incorrect_answers,correct_answer]
-
-
-let answers = [...incorrect_answers] //هنا بيخلي الاجابه الصح في اماكن مختلفه
+let answers = [...incorrect_answers] 
 const tempIndex=Math.floor(Math.random() * 4)
 if(tempIndex === 3){
   answers.push(correct_answer)
