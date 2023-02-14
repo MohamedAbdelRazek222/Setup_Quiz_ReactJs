@@ -30,12 +30,10 @@ const [quiz,setQuiz]=useState({
 const fetchQuestions=async (url)=>{
 setLoading(true)
 setWaiting(false)
-const response=await axios(url).catch(err=>console.log(err)) //get
+const response=await axios(url).catch(err=>console.log(err)) 
 console.log(response)
 if(response){
 const data=response.data.results
-console.log({data})
-// data (10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
 if(data.length>0){
   setQuestions(data)
 setLoading(false)
@@ -74,14 +72,6 @@ if(value){
 nextQuestion()
 
 }
-
-// // useEffect---------------------------------------
-// useEffect(()=>{
-// fetchQuestions(tempUrl)
-
-
-// },[])
-
  // handleChange---------------------------------------
 
 const handleChange=(e)=>{
@@ -107,7 +97,7 @@ setIsModalOpen(true)
 }
 // closeModal-----------------------------------------
 const closeModal=()=>{
-setWaiting(true) // SetupForm بيروح علي صفحه ال 
+setWaiting(true) 
 setCorrect(0)
 setIsModalOpen(false)
 }
