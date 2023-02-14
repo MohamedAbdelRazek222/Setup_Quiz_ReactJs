@@ -15,6 +15,7 @@ It is a page on which questions are placed and their number, difficulty level, a
 
 
 -The Questions
+![Qutions](https://user-images.githubusercontent.com/118555438/218621673-a24b33a7-3e95-4382-899b-80c7a06ea4d8.jpg)
 
 
 -When you finish, the percentage of your success in the questions will be calculated
